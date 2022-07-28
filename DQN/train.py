@@ -81,6 +81,7 @@ def main():
             print(f'Episode: {episode}, Median progress: {med_progress}, Median reward: {med_reward}, Win rate : {win_rate}')
 
         if not episode % SAVE_MODEL_EVERY:
+            print("saving model")
             with open(f'replay/{MODEL_NAME}.pkl', 'wb') as output:
                 pickle.dump(agent.replay_memory, output)
 
