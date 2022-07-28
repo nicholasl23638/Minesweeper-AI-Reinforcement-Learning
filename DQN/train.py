@@ -24,7 +24,7 @@ def parse_args():
 params = parse_args()
 
 AGG_STATS_EVERY = 100 # calculate stats every 100 games for tensorboard
-SAVE_MODEL_EVERY = 10_000 # save model and replay every 10,000 episodes
+SAVE_MODEL_EVERY = 100 # save model and replay every 10,000 episodes
 
 def main():
     env = MinesweeperEnv(params.width, params.height, params.n_mines)
