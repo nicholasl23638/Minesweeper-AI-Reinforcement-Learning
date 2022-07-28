@@ -12,9 +12,9 @@ def parse_args():
                         help='width of the board')
     parser.add_argument('--height', type=int, default=9,
                         help='height of the board')
-    parser.add_argument('--n_mines', type=int, default=1,
+    parser.add_argument('--n_mines', type=int, default=10,
                         help='Number of mines on the board')
-    parser.add_argument('--episodes', type=int, default=101,
+    parser.add_argument('--episodes', type=int, default=200,
                         help='Number of episodes to train on')
     parser.add_argument('--model_name', type=str, default=f'{MODEL_NAME}',
                         help='Name of model')
@@ -59,7 +59,6 @@ def main():
         ep_rewards.append(episode_reward)
 
         if env.n_wins > past_n_wins:
-            print("I won h hahahahahahahahahahaha")
             wins_list.append(1)
         else:
             wins_list.append(0)
