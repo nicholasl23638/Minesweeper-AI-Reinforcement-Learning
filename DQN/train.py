@@ -2,7 +2,6 @@ import argparse, pickle
 from tqdm import tqdm
 from keras.models import load_model
 from DQN_agent import *
-import os, sys
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
