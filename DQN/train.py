@@ -12,7 +12,7 @@ def parse_args():
                         help='width of the board')
     parser.add_argument('--height', type=int, default=9,
                         help='height of the board')
-    parser.add_argument('--n_mines', type=int, default=10,
+    parser.add_argument('--n_mines', type=int, default=1,
                         help='Number of mines on the board')
     parser.add_argument('--episodes', type=int, default=101,
                         help='Number of episodes to train on')
