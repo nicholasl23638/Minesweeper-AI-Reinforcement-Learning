@@ -63,8 +63,8 @@ def main():
         else:
             wins_list.append(0)
 
-        if len(agent.replay_memory) < MEM_SIZE_MIN:
-            continue
+        #if len(agent.replay_memory) < MEM_SIZE_MIN:
+         #   continue
 
         if not episode % AGG_STATS_EVERY:
             med_progress = round(np.median(progress_list[-AGG_STATS_EVERY:]), 2)
