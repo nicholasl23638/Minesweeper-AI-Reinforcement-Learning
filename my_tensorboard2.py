@@ -1,5 +1,6 @@
 import tensorflow as tf
 from keras.callbacks import TensorBoard
+import os, sys
 
 # use with Tensorflow version 2+
 class ModifiedTensorBoard(TensorBoard):
