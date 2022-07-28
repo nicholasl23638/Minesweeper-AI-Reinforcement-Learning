@@ -1,7 +1,7 @@
 import argparse
 from tqdm import tqdm
 from keras.models import load_model
-import MinesweeperAgentWeb
+from MinesweeperAgentWeb import *
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Play Minesweeper online using a DQN')
