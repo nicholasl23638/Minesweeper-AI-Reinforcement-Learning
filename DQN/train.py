@@ -59,6 +59,7 @@ def main():
         ep_rewards.append(episode_reward)
 
         if env.n_wins > past_n_wins:
+            print("I won h hahahahahahahahahahaha")
             wins_list.append(1)
         else:
             wins_list.append(0)
@@ -81,7 +82,6 @@ def main():
             print(f'Episode: {episode}, Median progress: {med_progress}, Median reward: {med_reward}, Win rate : {win_rate}')
 
         if not episode % SAVE_MODEL_EVERY:
-            print("saving model")
             with open(f'replay/{MODEL_NAME}.pkl', 'wb') as output:
                 pickle.dump(agent.replay_memory, output)
 
